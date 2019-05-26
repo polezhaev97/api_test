@@ -22,8 +22,12 @@
     UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:controller];
     
     self.window.rootViewController = navController;
-    
+    [self printHelloWorld];
     return YES;
+}
+
+-(void)printHelloWorld{
+    NSLog(@"Hello world");
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
